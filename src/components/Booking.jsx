@@ -80,7 +80,7 @@ const Booking = ({ onClose }) => {
   const handleConfirm = () => {
     /* Open WhatsApp with pre-filled professional message */
     const msg   = buildWhatsAppMessage(form);
-    const phone = '919966360611';
+    const phone = '919347465004';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank');
     setSub(true);
   };
@@ -415,7 +415,7 @@ const Booking = ({ onClose }) => {
             {/* Alt contact */}
             <p className="booking__alt-contact">
               Prefer to call?{' '}
-              <a href="tel:+919966360611">+91 99663 60611</a>
+              <a href="tel:+919347465004">+91 99663 60611</a>
               {' '}or{' '}
               <a
                 href="https://wa.me/919347465004"
