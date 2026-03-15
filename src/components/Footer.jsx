@@ -17,7 +17,7 @@ const SERVICE_LINKS = [
 const SOCIALS = [
   { icon:'fab fa-instagram', href:'https://instagram.com',        label:'Instagram' },
   { icon:'fab fa-facebook-f',href:'https://facebook.com',        label:'Facebook'  },
-  { icon:'fab fa-whatsapp',  href:'https://wa.me/919966360611',  label:'WhatsApp'  },
+  { icon:'fab fa-whatsapp',  href:'https://wa.me/919347465004',  label:'WhatsApp'  },
   { icon:'fab fa-youtube',   href:'https://youtube.com',         label:'YouTube'   },
 ];
 
@@ -44,7 +44,7 @@ const phoneLink = phone.replace("+", "");
             </p>
             <button className="btn btn-gold" onClick={onBookClick} style={{ fontSize:12 }}>
               <i className="fas fa-calendar-check" />
-              Book Now — It's Free
+              Book Now - It's Free
             </button>
           </div>
         </div>

@@ -55,12 +55,12 @@ const About = ({ onBookClick }) => (
               />
             </div>
 
-            <div className="about__img-float">
+            {/* <div className="about__img-float">
               <img
                 src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=400&q=80"
                 alt="Salon team"
               />
-            </div>
+            </div> */}
 
             <div className="about__stats">
               {STATS.map(s => (

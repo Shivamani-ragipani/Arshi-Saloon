@@ -9,7 +9,7 @@ const HOURS = [
 
 const Contact = ({ onBookClick }) => {
 
-  const phone = process.env.REACT_APP_PHONE_NUMBER || "+91934765004";
+  const phone = process.env.REACT_APP_PHONE_NUMBER || "+91 93476 5004";
   const phoneLink = phone.replace("+", "");
 
   return (

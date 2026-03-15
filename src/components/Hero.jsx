@@ -1,36 +1,45 @@
-import React from 'react';
-import '../styles/hero.css';
+import React from "react";
+import "../styles/hero.css";
 
 const Hero = ({ onBookClick }) => {
+
   const scrollTo = (id) => {
     const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <section className="hero" id="home">
-      {/* BG */}
-      <div className="hero__bg">
-        <img
-          src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&q=85"
-          alt="Arshi Salon"
-        />
-        <div className="hero__overlay" />
-        <div className="hero__dots" />
-      </div>
+
+      {/* VIDEO BACKGROUND */}
+     <div className="hero__bg">
+
+  <iframe
+    className="hero__video"
+    src="https://www.youtube.com/embed/RWr8XeBUxTU?autoplay=1&mute=1&controls=0&loop=1&playlist=RWr8XeBUxTU&showinfo=0&rel=0&modestbranding=1"
+    frameBorder="0"
+    allow="autoplay; fullscreen"
+    allowFullScreen
+    title="Salon Background"
+  ></iframe>
+
+  <div className="hero__overlay"></div>
+  <div className="hero__dots"></div>
+
+</div>
 
       <div className="container">
         <div className="hero__content">
 
           <div className="hero__badge">
             <span className="hero__badge-dot" />
-            Premium Unisex Salon &amp; SPA · Hyderabad
+            Premium Unisex Salon & SPA · Hyderabad
           </div>
 
           <h1 className="hero__title">
             Arshi
-            <em>Unisex Saloon</em>
-            &amp; SPA
+            <em>Unisex Salon</em>
+            & SPA
           </h1>
 
           <div className="hero__ornament">
@@ -54,7 +63,11 @@ const Hero = ({ onBookClick }) => {
               <i className="fas fa-calendar-check" />
               Book Appointment
             </button>
-            <button className="btn btn-ghost-white" onClick={() => scrollTo('services')}>
+
+            <button
+              className="btn btn-ghost-white"
+              onClick={() => scrollTo("services")}
+            >
               Explore Services
               <i className="fas fa-arrow-right" />
             </button>
@@ -63,26 +76,33 @@ const Hero = ({ onBookClick }) => {
         </div>
       </div>
 
-      {/* Stats */}
-      <div className="hero__stats">
+      {/* STATS */}
+      {/* <div className="hero__stats">
         {[
-          { num: '12', suffix: '+', lbl: 'Years Experience' },
-          { num: '5k', suffix: '+', lbl: 'Happy Clients'    },
-          { num: '20', suffix: '+', lbl: 'Expert Stylists'  },
-          { num: '4.9', suffix: '★', lbl: 'Google Rating'   },
-        ].map(s => (
+          { num: "12", suffix: "+", lbl: "Years Experience" },
+          { num: "5k", suffix: "+", lbl: "Happy Clients" },
+          { num: "20", suffix: "+", lbl: "Expert Stylists" },
+          { num: "4.9", suffix: "★", lbl: "Google Rating" },
+        ].map((s) => (
           <div className="hero__stat" key={s.lbl}>
-            <span className="hero__stat-num">{s.num}<span>{s.suffix}</span></span>
+            <span className="hero__stat-num">
+              {s.num}
+              <span>{s.suffix}</span>
+            </span>
             <span className="hero__stat-lbl">{s.lbl}</span>
           </div>
         ))}
-      </div>
+      </div> */}
 
-      {/* Scroll */}
-      <div className="hero__scroll" onClick={() => scrollTo('services')}>
+      {/* SCROLL */}
+      <div
+        className="hero__scroll"
+        onClick={() => scrollTo("services")}
+      >
         <span className="hero__scroll-txt">Scroll</span>
         <div className="hero__scroll-line" />
       </div>
+
     </section>
   );
 };

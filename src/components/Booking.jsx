@@ -142,7 +142,7 @@ const Booking = ({ onClose }) => {
             </div>
 
             <a
-              href={`https://wa.me/919966360611?text=${encodeURIComponent(buildWhatsAppMessage(form))}`}
+              href={`https://wa.me/919347465004?text=${encodeURIComponent(buildWhatsAppMessage(form))}`}
               target="_blank" rel="noreferrer"
               className="booking__success-wa"
             >
@@ -418,7 +418,7 @@ const Booking = ({ onClose }) => {
               <a href="tel:+919966360611">+91 99663 60611</a>
               {' '}or{' '}
               <a
-                href="https://wa.me/919966360611"
+                href="https://wa.me/919347465004"
                 target="_blank" rel="noreferrer"
               >
                 WhatsApp us directly
