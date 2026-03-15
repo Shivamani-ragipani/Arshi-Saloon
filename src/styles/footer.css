@@ -52,7 +52,6 @@
 }
 
 /* Brand */
-.footer__brand {}
 .footer__brand-logo {
   display:flex; align-items:center; gap:14px;
   margin-bottom:22px;
