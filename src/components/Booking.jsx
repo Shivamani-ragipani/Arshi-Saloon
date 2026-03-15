@@ -359,7 +359,7 @@ const Booking = ({ onClose }) => {
                     <p className="booking__confirm-note">
                       Clicking <strong>"Confirm Booking"</strong> will open WhatsApp with your
                       booking details pre-filled and send them directly to our team at{' '}
-                      <strong>+91 99663 60611</strong>.
+                      <strong>+91 93474 65004</strong>.
                     </p>
 
                     <div style={{
@@ -415,7 +415,7 @@ const Booking = ({ onClose }) => {
             {/* Alt contact */}
             <p className="booking__alt-contact">
               Prefer to call?{' '}
-              <a href="tel:+919347465004">+91 99663 60611</a>
+              <a href="tel:+919347465004">+91 93474 65004</a>
               {' '}or{' '}
               <a
                 href="https://wa.me/919347465004"
