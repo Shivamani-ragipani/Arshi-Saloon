@@ -8,6 +8,10 @@ const HOURS = [
 ];
 
 const Contact = ({ onBookClick }) => {
+
+  const phone = process.env.REACT_APP_PHONE_NUMBER || "+91934765004";
+  const phoneLink = phone.replace("+", "");
+
   return (
     <section className="contact" id="contact">
       <div className="container">
@@ -30,20 +34,20 @@ const Contact = ({ onBookClick }) => {
         <div className="contact__cards">
 
           {/* CALL */}
-          <a href="tel:+919966360611" className="contact__card">
+          <a href={`tel:${phoneLink}`} className="contact__card">
             <div className="contact__icon">
               <i className="fas fa-phone-alt"></i>
             </div>
 
             <div>
               <h4>Call Us</h4>
-              <p>+91 99663 60611</p>
+              <p>{phone}</p>
             </div>
           </a>
 
           {/* WHATSAPP */}
           <a
-            href="https://wa.me/919966360611"
+            href={`https://wa.me/${phoneLink}`}
             target="_blank"
             rel="noreferrer"
             className="contact__card"
