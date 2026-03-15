@@ -1,0 +1,260 @@
+/* ===== CONTACT SECTION ===== */
+
+.contact{
+  padding:100px 0;
+  background:var(--cream);
+}
+
+.contact .container{
+  max-width:1100px;
+  margin:auto;
+  padding:0 24px;
+}
+
+/* ================= HEADER ================= */
+
+.contact__header{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.contact__desc{
+  font-size:14px;
+  color:var(--muted);
+  max-width:520px;
+  margin:12px auto 0;
+  line-height:1.7;
+}
+
+/* ================= CONTACT CARDS ================= */
+
+.contact__cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-bottom:50px;
+}
+
+.contact__card{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+
+  padding:20px;
+
+  border-radius:var(--radius-lg);
+  border:1.5px solid var(--border);
+
+  background:var(--white);
+
+  text-decoration:none;
+  color:inherit;
+
+  transition:var(--t-base);
+}
+
+.contact__card:hover{
+  transform:translateY(-3px);
+  border-color:var(--gold);
+  box-shadow:var(--shadow-sm);
+}
+
+.contact__card h4{
+  font-size:15px;
+  font-weight:600;
+  margin-bottom:3px;
+}
+
+.contact__card p{
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.6;
+}
+
+/* icon */
+
+.contact__icon{
+  width:42px;
+  height:42px;
+
+  border-radius:10px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:var(--gold-dim);
+  color:var(--gold);
+
+  font-size:16px;
+
+  flex-shrink:0;
+}
+
+.contact__icon--whatsapp{
+  background:#25D36620;
+  color:#25D366;
+}
+
+/* ================= GOOGLE MAP ================= */
+
+.contact__map{
+  border-radius:var(--radius-xl);
+  overflow:hidden;
+
+  border:1.5px solid var(--border);
+
+  height:320px;
+  margin-bottom:50px;
+
+  box-shadow:var(--shadow-sm);
+}
+
+.contact__map iframe{
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+/* ================= OPENING HOURS ================= */
+
+.contact__hours{
+  background:var(--dark);
+  color:var(--white);
+
+  border-radius:var(--radius-xl);
+
+  padding:36px;
+
+  margin-bottom:50px;
+}
+
+.contact__hours-title{
+  font-family:var(--font-serif);
+  font-size:20px;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  margin-bottom:18px;
+
+  color:var(--gold-light);
+}
+
+.contact__hours-row{
+  display:flex;
+  justify-content:space-between;
+
+  font-size:14px;
+
+  padding:10px 0;
+
+  border-bottom:1px solid rgba(255,255,255,0.07);
+}
+
+.contact__hours-row:last-child{
+  border-bottom:none;
+}
+
+.contact__hours-row span:first-child{
+  color:rgba(255,255,255,0.55);
+}
+
+.contact__hours-row span:last-child{
+  font-weight:500;
+}
+
+/* ================= BOOK CTA ================= */
+
+.contact__cta{
+  text-align:center;
+
+  background:var(--cream-2);
+
+  border-radius:var(--radius-xl);
+
+  padding:50px 30px;
+
+  border:1.5px solid var(--border);
+}
+
+.contact__cta h3{
+  font-family:var(--font-serif);
+  font-size:24px;
+
+  margin-bottom:8px;
+}
+
+.contact__cta p{
+  font-size:14px;
+  color:var(--muted);
+
+  margin-bottom:20px;
+}
+
+.contact__cta button{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  padding:14px 32px;
+
+  border-radius:50px;
+
+  background:var(--dark);
+  color:var(--white);
+
+  font-size:13px;
+  font-weight:700;
+
+  border:2px solid var(--dark);
+
+  cursor:pointer;
+
+  transition:var(--t-base);
+}
+
+.contact__cta button:hover{
+  background:var(--gold);
+  border-color:var(--gold);
+  color:var(--dark);
+
+  transform:translateY(-2px);
+
+  box-shadow:var(--shadow-gold);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+  .contact__cards{
+    grid-template-columns:1fr 1fr;
+  }
+
+}
+
+@media(max-width:640px){
+
+  .contact{
+    padding:70px 0;
+  }
+
+  .contact__cards{
+    grid-template-columns:1fr;
+  }
+
+  .contact__map{
+    height:240px;
+  }
+
+  .contact__hours{
+    padding:28px 22px;
+  }
+
+  .contact__cta{
+    padding:36px 20px;
+  }
+
+}
