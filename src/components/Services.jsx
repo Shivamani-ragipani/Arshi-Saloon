@@ -195,4 +195,4 @@ const Services = ({ onBookClick }) => {
 };
 
 export default Services;
-export { SERVICE_CATEGORIES };EGORIES };
+export { SERVICE_CATEGORIES };
