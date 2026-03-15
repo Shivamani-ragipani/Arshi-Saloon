@@ -377,24 +377,38 @@ padding:16px 22px;
 
 }
 
-@media(max-width:768px){
+/* ============================= */
+/* MOBILE HERO */
+/* ============================= */
 
-.hero__stats{
-display:none;
+/* ============================= */
+/* MOBILE HERO VIDEO FIX */
+/* ============================= */
+
+@media (max-width:768px){
+
+.hero{
+  height:100vh;
 }
 
-.hero__scroll{
-display:none;
+/* make video cover entire hero */
+
+.hero__video{
+  position:absolute;
+
+  top:50%;
+  left:50%;
+
+  width:300vw;
+  height:200vh;
+
+  transform:translate(-50%, -50%) scale(1.6);
+
+  pointer-events:none;
 }
 
-.hero__actions{
-flex-direction:column;
-align-items:flex-start;
-}
-
-.hero__actions .btn{
-width:100%;
-justify-content:center;
+.hero__content{
+  margin-top:90px;
 }
 
 }
